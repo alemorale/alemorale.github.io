@@ -2,7 +2,7 @@
 title: Alejandro Morales
 email: ale.moralesgallardo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Alejandro Morales. Data. Science. Visualization. And. More.
+  Alejandro Morales. Data. Science. Visualization.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://alemorale.github.io" # the base hostname & protocol for your site
 twitter_username: amorgallardo
