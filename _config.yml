@@ -4,9 +4,25 @@ email: ale.moralesgallardo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Alejandro Morales. Data. Science. Visualization.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://alemorale.github.io" # the base hostname & protocol for your site
+url: "localhost:4000" #"http://alemorale.github.io" # the base hostname & protocol for your site
 twitter_username: amorgallardo
 github_username:  alemorale
+facebook_username: alekoki
+kaggle_username: alekoki
 
 # Build settings
+timezone: America/Chicago
+highlighter: pygments
 markdown: kramdown
+#permalink: pretty
+
+# Owner/author information
+owner:
+  name: Alejandro Morales Gallardo
+ # avatar: your-photo.jpg
+  email: ale.moralesgallardo@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: amorgallardo
+  github: alemorale
+  linkedin: alemoralesg
+  kaggle: alekoki

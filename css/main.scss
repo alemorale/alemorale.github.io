@@ -27,7 +27,11 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+//change default image size
+.image-size {
+  text-align: center;
+  width: 600px;
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
