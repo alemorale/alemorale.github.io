@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Wearable data"
+title:  "Wearables exploratory data analysis"
 date:   2014-12-28	
-categories: data analysis
+categories: data-analysis
 ---
 
 ## Introduction
@@ -21,70 +21,68 @@ The variables included in the data set are:
 Assuming the data file is in the working directory, we load the data as is without any preprocessing at this stage.
 
 
-```r
+{% highlight r %}
 activity <- read.csv('activity.csv')
-```
+{% endhighlight  %}
 
 
 ## What is mean total number of steps taken per day?
 We would like to know the average number of total steps taken per day. First, we take a look at the distribution of total steps taken per day. In the figure we can see that the distribution is approximately normal.
 
-```
-totaldailysteps<-tapply(activity$steps,activity$date,sum)
-hist(totaldailysteps)
-```
 {% highlight r %}
 totaldailysteps<-tapply(activity$steps,activity$date,sum)
 hist(totaldailysteps)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![total daily steps]({{site.baseurl}}/assets/total-daily-steps.png) 
 
 Ignoring missing values, the mean total number of steps taken per day is 10,766 and the median is 10,765, we can see that the values are almost equal.
 
-```r
+{% highlight r %}
 mean(totaldailysteps,na.rm=TRUE)
-```
+{% endhighlight  %}
 
-```
+{% highlight r %}
 ## [1] 10766
-```
+{% endhighlight  %}
 
-```r
+
+{% highlight r %}
 median(totaldailysteps,na.rm = TRUE)
-```
+{% endhighlight  %}
 
-```
+
+{% highlight r %}
 ## [1] 10765
-```
+{% endhighlight  %}
 
 ## What is the average daily activity pattern?
 Next, we would like to know what is the average daily activity pattern. In order to obtain the pattern we first remove missing values from the dataset. With the new dataset we can calculate the average number of steps in any given interval via the 'tapply' function which allows to omit a loop-structure.
 We can obtain a few insights from this plot. First, as it would be expected, we can observe that the individual is sleeping through the night as the avearge number of steps is very low. We can also identify a burst of activity between the 500 and 1000 intervals.
 
-```r
+{% highlight r %}
 activityNoNa <- subset(activity, !is.na(steps))
 intervals <- unique(activityNoNa$interval)
 meanstepsperinterval<-tapply(activityNoNa$steps,activityNoNa$interval,mean)
 plot(intervals,meanstepsperinterval,type="l")
-```
+{% endhighlight  %}
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![mean steps per interval]({{site.baseurl}}/assets/mean-steps-per-interval.png) 
 
 The burst we identified in the previous plot also contains the maximum number of steps on average for any 5 minute interval. We identify which interval contains the maximum number of steps as 835.
 
-```r
+{% highlight r %}
 indexmax <- which(meanstepsperinterval==max(meanstepsperinterval),arr.ind = TRUE)[1]
 intervalmax <- intervals[indexmax]
 intervalmax
-```
+{% endhighlight  %}
 
-```
+{% highlight r %}
 ## [1] 835
-```
+{% endhighlight %}
 
 ## Imputing missing values
-In order to reduce possible bias in our previous calculations, we would like to remove the missing values (coded as NA). The total number of missing values in the original dataset is 2304.
+In order to reduce possible bias in our previous calculations, we would like to remove the missing values (coded as `NA`). The total number of missing values in the original dataset is 2304.
 
 {% highlight r %}
 TotalNas <- (dim(activity)[1]-dim(activityNoNa)[1])
@@ -92,16 +90,15 @@ sum(is.na(activity$steps))
 {% endhighlight %}
 
 
-```
+{% highlight r %}
 ## [1] 2304
-```
+{% endhighlight  %}
 
 We impute the missing value with a very simple strategy, namely, we assign to an interval with a missing value the average number of steps accross all days for that interval. We create a new dataset 'newdata' with the imputed values.
 
 {% highlight r %}
-
-#impute missing values with average of interval
-#create new data frame with imputed missing values
+# impute missing values with average of interval
+# create new data frame with imputed missing values
 activity$meanStepsperInterval<-rep(round(meanstepsperinterval),61)
 activity$steps[is.na(activity$steps)] <- 
     activity$meanStepsperInterval[is.na(activity$steps)]
@@ -111,31 +108,31 @@ newdata <- subset(activity, select = steps:interval)
 With the new dataset we construct the histogram of the total number of steps per day. The histogram seems similar to the previous histogram, we can see that there are more cases and so the bins get higher values.
 
 
-```r
+{% highlight r %}
 newtotaldailysteps<-tapply(newdata$steps,newdata$date,sum)
 hist(newtotaldailysteps)
-```
+{% endhighlight %}
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8.png) 
+![total daily steps imputed]({{site.baseurl}}/assets/total-daily-steps-imputed.png) 
 
 The mean number of total steps taken per day is not affected by the data imputation as remains constant at 10,766. However, the median number of total steps for the new dataset is 10,762 which is slightly lower than the median obtained for the dataset with missing values.
 
 
-```r
+{% highlight r %}
 mean(newtotaldailysteps)
-```
+{% endhighlight  %}
 
-```
+{% highlight r %}
 ## [1] 10766
-```
+{% endhighlight  %}
 
-```r
+{% highlight r %}
 median(newtotaldailysteps)
-```
+{% endhighlight  %}
 
-```
+{% highlight r %}
 ## [1] 10762
-```
+{% endhighlight  %}
 
 ## Are there differences in activity patterns between weekdays and weekends?
 Finally, we would like to compare activity patterns between weekdays and weekends to see if there are any differences. To do so, we create a categorical variable 'wday' that indicates whether a given day is a 'weekday' day or a 'weekend' day.
@@ -165,7 +162,7 @@ xyplot(steps ~ interval | wday, data = newdata,
            })
 {% endhighlight  %}
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![mean weekend and weekday steps]({{site.baseurl}}/assets/mean-steps-weekend-weekday.png) 
 
 ## Summary
 New monitoring devices allow the collection of large amount of data about personal movement. With some preprocessing, this data can be analyzed and interpreted. We analyzed data for a single individual collected for two months. The data consists of the total number of steps taken in 5 minute intervals. The original data set had over 10% of missing data, which could bias the results of our analysis. After imputing values with a simple strategy, we can conclude that imputing values in the dataset did not change drastically the summary statistics. The mean value remained the same but the median value was lower with the imputing strategy utilized. With the help of a categorical variable and the lattice package, comparing the average activity patterns of weekdays and weekends is straightforward.

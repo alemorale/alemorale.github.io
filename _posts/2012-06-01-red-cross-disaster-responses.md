@@ -3,6 +3,7 @@ layout: post
 title: "Analyzing Red Cross's Disaster Responses"
 date: 2012-06-01
 categories: data-analysis retro
+tags: matlab, data-analysis
 ---
 
 The following is an analysis I performed during the Chicago **DataDive** organized by [DataKind](http://datakind.org). 

@@ -14,10 +14,10 @@ kaggle_username: alekoki
 timezone: America/Chicago
 highlighter: pygments
 markdown: kramdown
-#permalink: pretty
+permalink: /:year/:title.html
 
 # Owner/author information
-owner:
+author:
   name: Alejandro Morales Gallardo
  # avatar: your-photo.jpg
   email: ale.moralesgallardo@gmail.com
