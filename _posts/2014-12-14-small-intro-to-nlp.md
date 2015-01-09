@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adventures into Natural Language Processing"
-date:   2015-01-07 21:54:32
+date:   2014-12-14
 categories: data-analysis
 tags: nlp, data-analysis, r
 ---

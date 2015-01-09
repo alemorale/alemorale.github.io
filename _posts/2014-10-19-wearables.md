@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wearables exploratory data analysis"
-date:   2014-12-28	
+date:   2014-10-19	
 categories: data-analysis
 ---
 

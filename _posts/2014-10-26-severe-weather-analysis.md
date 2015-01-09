@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Severe Weather Analysis"
-date:   2014-12-28	
+date:   2014-10-26	
 categories: data-analysis
 tags: r, data-analysis
 ---
