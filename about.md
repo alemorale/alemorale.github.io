@@ -4,14 +4,30 @@ title: About
 permalink: /about/
 ---
 
-As a trained physicist with broad academic experience, I like to apply my expertise in data analysis towards identifying and solving meaningful problems. My background in data-driven research is balanced by my ability to communicate with professionals from diverse backgrounds and a desire to apply data science to real-world issues.
+{:.tiny-img}
+![photo](/assets/total-daily-steps.png)
 
-In my career as a physicist my research focused on how individual-level interactions shape systemic-level, emergent phenomena. Examples of these phenomena included the spread of diseases and the propagation of information and behavioral traits.
+As a physicist with a strong background in programming and devising mathematical models, I like to use data analysis to identify and solve meaningful problems. 
 
-I use methods from dynamical systems theory, network theory, statistical mechanics, and stochastic processes to develop quantitative models and theories that advance our understanding of these intricately related phenomena. I have modeled networks using a combination of analytical techniques, community-detecting algorithms, optimization and numerical methods, and large-scale computer simulations. 
+In my career as a physicist my research focused on how individual-level interactions shape systemic-level, emergent phenomena. These phenomena ranged from the global spread of diseases to the propagation of information and behavioral traits among networks of financial traders.
+
+Some of my previous work include forecasting the [swine-flu epidemic](http://rocs.northwestern.edu/projects/swine_flu) in real-time. It got picked by the [New York Times](http://goo.gl/jwVDA8)!
+
+<br>
+More recently, I've been sharpening my data science skills by: 
+
+- Participating in [Kaggle Competitions](http://www.kaggle.com/users/41475/alekoki),
+- Analyze the impact of severe [weather events](http://rpubs.com/alemorale/severeweather), 
+- Automatically classify activities of accelerometer data and
+- Develop a text prediction [app](http://alemorales.shinyapps.io/nextWord).
 
 
-- [kaggle](http://www.kaggle.com/users/41475/alekoki)
-- [linkedin](http://www.linkedin.com/alemoralesg)
+As of now, I help non-profit organization gain insights from their data and help them improve their operations. 
 
-You can see some of the previous work here: [swine flu](http://rocs.northwestern.edu/projects/swine_flu)
+
+I really have a passion for dissecting datasets doing detective work to find that story the data tells through creative data visualizations.
+
+<br>
+Through my academic carrer I was lucky enough to live in different countries, like Israel, Germany and finally the US. I not only learned amazing skills but along the way picked languages. I speak German and Spanish, long time ago I knew Hebrew, good enough to attend a quantum physics class!
+
+Here is a link to my [linkedin](http://www.linkedin.com/alemoralesg) profile.
