@@ -9,7 +9,8 @@ permalink: /about/
 <br>
 Trained as a physicist, I have a strong background in programming. I have a passion for dissecting datasets and doing detective work to find the hidden stories in data and produce insights through creative visualizations.
 
-Currently, I'm helping a non-profit organization reduce costs, improve decision-making and gain insights from their data to improve management. 
+Currently, I'm helping a non-profit organization reduce costs and gain insights from their data to improve decision-making.
+
 	
 <!--As a physicist with a strong background in programming and implementing mathematical models I uses data analysis to identify and solve meaningful problems.
 --> 
