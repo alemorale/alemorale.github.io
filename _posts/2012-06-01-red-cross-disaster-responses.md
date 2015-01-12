@@ -20,7 +20,7 @@ For the sake of this excercise we concentrated our analysis to disaster emergeng
 Over 30% of reported fires happen within 10 zipcode zones!
 
 
-<!--{:.image-size} -->
+{:.image-size} 
 ![Total responsess by zipcode]({{site.baseurl}}/assets/red-cross-zipcodes.png) 
 
  
@@ -29,8 +29,7 @@ The following map shows the zipcode zones with highest reported disasters.
 The Chicago chapter of the American Red Cross did not have, at the time, a centralized database of 
 -->
 
-<!--<iframe width="600" height="400" scrolling="no" frameborder="no" -->
-<iframe scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col39+from+1WzNoQKJMQQgFMPimFMtf602iUhZSUvDfncPP4M0&amp;viz=MAP&amp;h=false&amp;lat=41.79197187093165&amp;lng=-87.69969750781252&amp;t=1&amp;z=9&amp;l=col39&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
+<iframe width="800" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col39+from+1WzNoQKJMQQgFMPimFMtf602iUhZSUvDfncPP4M0&amp;viz=MAP&amp;h=false&amp;lat=41.79197187093165&amp;lng=-87.69969750781252&amp;t=1&amp;z=9&amp;l=col39&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>
 
 
 <br> <br>

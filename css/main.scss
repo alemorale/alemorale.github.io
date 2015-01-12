@@ -33,6 +33,12 @@ $on-laptop:        800px;
   width: 600px;
 }
 
+.mugshot-size {
+  text-align: center;
+  figure-align: center;
+  width: 400px;
+}
+
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {

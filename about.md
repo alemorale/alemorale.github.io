@@ -3,7 +3,10 @@ layout: post
 title: About
 permalink: /about/
 ---
+<!--{:.mugshot-size} -->
+![mugshot](/assets/mugshot.png)
 
+<br>
 Trained as a physicist, I have a strong background in programming. I have a passion for dissecting datasets and doing detective work to find the hidden stories in data and produce insights through creative visualizations.
 
 Currently, I'm helping a non-profit organization reduce costs, improve decision-making and gain insights from their data to improve management. 
@@ -26,4 +29,4 @@ More recently, I've been sharpening my data science skills by:
 - Developing a [text prediction](http://alemorales.shinyapps.io/nextWord) app using NLP and machine learning.
 
 
-Through my academic carrer I've been lucky enough to live in different countries. I've lived in Israel, Germany and finally the US. Along the way I learned their languages. I'm fluent in Spanish, English, German and long time ago I knew Hebrew --good enough to attend quantum physics lectures!
+Through my academic career I've been lucky enough to live in different countries. I've lived in Israel, Germany and finally the US. Along the way I learned their languages. I'm fluent in Spanish, English, German and long time ago I knew Hebrew --good enough to attend quantum physics lectures!
